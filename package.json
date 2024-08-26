@@ -1,0 +1,26 @@
+{
+  "name": "school-management-api",
+  "version": "1.0.0",
+  "description": "School Management API includes endpoints for adding new schools and retrieving a list of schools sorted by proximity to a user-specified location, with data stored in a MySQL database.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanketmahadik191/educase_school_management-api.git"
+  },
+  "author": "Sanket Mahadik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanketmahadik191/educase_school_management-api/issues"
+  },
+  "homepage": "https://github.com/sanketmahadik191/educase_school_management-api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}
