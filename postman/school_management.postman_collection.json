@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "bfb2130d-78a8-46a3-8e9e-9c0e1f463de8",
+		"name": "school_management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33745439"
+	},
+	"item": [
+		{
+			"name": "getSchools",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/listSchools?latitude=410.712776&longitude=-741.005974",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"listSchools"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "410.712776"
+						},
+						{
+							"key": "longitude",
+							"value": "-741.005974"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addSchoolt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Potdar English Schools\",\r\n  \"address\": \"412207 MJ road , Parbhani\",\r\n  \"latitude\": 410.730610,\r\n  \"longitude\": -743.935242\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/addSchool\n\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addSchool\n\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
