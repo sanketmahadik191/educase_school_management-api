@@ -12,12 +12,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/listSchools?latitude=410.712776&longitude=-741.005974",
-					"protocol": "http",
+					"raw": "https://educase-school-management-api.onrender.com/api/listSchools?latitude=410.712776&longitude=-741.005974",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"educase-school-management-api",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"listSchools"
@@ -43,7 +44,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"Potdar English Schools\",\r\n  \"address\": \"412207 MJ road , Parbhani\",\r\n  \"latitude\": 410.730610,\r\n  \"longitude\": -743.935242\r\n}",
+					"raw": "{\r\n  \"name\": \"SK highschool\",\r\n  \"address\": \"410010 Mumbai\",\r\n  \"latitude\": 23.456,\r\n  \"longitude\": 51.935242\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -51,15 +52,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/addSchool\n\n",
-					"protocol": "http",
+					"raw": "https://educase-school-management-api.onrender.com/api/addSchool",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"educase-school-management-api",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"api",
-						"addSchool\n\n"
+						"addSchool"
 					]
 				}
 			},
