@@ -3,6 +3,17 @@
 
 This project is a Node.js API for managing school data, built using Express.js and MySQL. The API allows users to add new schools and retrieve a list of schools sorted by proximity to a user-specified location.
 
+
+## Summary
+
+- [Features](#features)
+- [Postman Collection](#postman-collection)
+- [Hosting](#hosting)
+- [Technologies Used](#technologies-used)
+- [Prerequisites](#prerequisites)
+- [Setup Instructions](#setup-instructions)
+- [API Endpoints](#api-endpoints)
+
 ## Features
 
 - **Add School**: Add new schools with details such as name, address, latitude, and longitude.
