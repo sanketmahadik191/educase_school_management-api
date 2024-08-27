@@ -33,7 +33,7 @@ const listSchools = (req, res) => {
             return res.status(500).json({ message: 'Failed to fetch schools', error: err });
         }
 
-        //Haversine formula to calculate distance
+        //Haversine formula to calculate distance on earth
         const calculateDistance = (lat1, lon1, lat2, lon2) => {
             const toRad = (value) => (value * Math.PI) / 180;
             const R = 6371;
@@ -47,10 +47,12 @@ const listSchools = (req, res) => {
         };
 
         // Sorting
-        schools.sort((a, b) => 
-            calculateDistance(userLat, userLon, a.latitude, a.longitude) -
-            calculateDistance(userLat, userLon, b.latitude, b.longitude)
-        );
+        schools.forEach(school => {
+            const distance = calculateDistance(userLat, userLon, school.latitude, school.longitude);
+            school.distanceFromUser = `${distance.toFixed(2)} km`;
+        });
+
+        schools.sort((a, b) => parseFloat(a.distanceFromUser) - parseFloat(b.distanceFromUser));
 
         res.json(schools);
     });
